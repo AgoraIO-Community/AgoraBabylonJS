@@ -25,7 +25,8 @@ function createAgoraVideoPlane(scene, streamId, isLocal)
 
   // create the material  
   var materialName =  'agoraVideoMaterial_' + streamId;
-  var videoMaterial = new BABYLON.StandardMaterial(materialName, scene);  // set video texture as the src of the video material diffuse
+  var videoMaterial = new BABYLON.StandardMaterial(materialName, scene);  
+  // set video texture as the src of the video material diffuse
   videoMaterial.diffuseTexture = videoTexture;
   videoMaterial.roughness = 1;
   videoMaterial.emissiveColor = new BABYLON.Color3.White();

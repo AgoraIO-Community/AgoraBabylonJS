@@ -6,9 +6,7 @@ The important things to know
 * WebRTC Streams can function as the `srcObj` of a `<video />` 
 * Agora's Web SDK uses WebRTC streams
 
-To connect Agora to Babylon.js you need to create an empty `video` element and use it when creating a [BABYLON.VideoTexture](https://doc.babylonjs.com/api/classes/babylon.videotexture). Then create a material and assign the video texture as the material's `diffuseTexture` property. Next create a model and assign the video material as its `material` property. 
-
-Then when a stream is 
+To connect Agora to Babylon.js you need to create an empty `video` element and use it when creating a [BABYLON.VideoTexture](https://doc.babylonjs.com/api/classes/babylon.videotexture). Then create a material and assign the video texture as the material's `diffuseTexture` property. Next create a model and assign the video material as its `material` property.
 
 > Note: in this example I use the streamId to create unique identifiers for each element in the DOM and Scene. The naming is important to help avoid collisions and ensure you are always getting the intended reference. 
 

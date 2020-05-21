@@ -57,7 +57,7 @@ function createAgoraVideoPlane(scene, streamId, isLocal)
 ```
 Once the stream `created`, `published` or `subscribed`,  get the corresponding `<video />` element, and set the stream as the `video`'s `srcObj`. 
 
-```
+```javascript
 function connectStreamToVideo(agoraStream) {
   var streamId = agoraStream.getId() // get the stream ID
   var video = document.getElementById('agoraVideo_' + streamId); // get the video element

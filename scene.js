@@ -27,7 +27,7 @@ var createVideoModel = function (scene, streamId, isLocal) {
   video.id = 'agoraVideo_' + streamId;
   video.setAttribute('webkit-playsinline', 'webkit-playsinline');
   video.setAttribute('playsinline', 'playsinline');
-  video.src ='textures/test.mp4';
+  // video.src ='textures/test.mp4';
   // add video object to the DOM
   document.querySelector('canvas').appendChild(video);
  
@@ -110,7 +110,7 @@ try {
 
 
 // Agora settings
-const agoraAppId = '4fdfd402ce0a45ea94d850f2124f0b36'; // insert Agora AppID here
+const agoraAppId = ''; // insert Agora AppID here
 const channelName = 'Babylonjsdemo'; 
 var streamCount = 0;
 
